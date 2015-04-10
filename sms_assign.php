@@ -16,6 +16,7 @@ $message = $_REQUEST['message'];
  //   $reply = "We don't know what animal that is";
 
 //}
+
 switch (trim(strtolower($message))){
      case 'dog':
       $reply ="A dog is a domestic animal";
