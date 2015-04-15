@@ -56,7 +56,7 @@ function createUser($delimiters, $string){
 }
 
 $text = "Korir#25#34343";
-$exploded = createUser(array("#"), $text);
+$exploded = createUser(array("#" , "-"), $text);
 print_r($exploded);
 
 
@@ -67,6 +67,6 @@ $data[1] = $exploded;
 $datastring=implode("','",$data[1]);
 $datastring="'".$datastring."'";
 print_r ("INSERT INTO users (`name`, `age`, `national_Id`) VALUES ($datastring)");
-//$sql = "INSERT INTO users (`name`, `age`, `national_Id`) VALUES ($datastring)";
+
 //mysql_query($sql) or exit(mysql_error()); 
 ?>
