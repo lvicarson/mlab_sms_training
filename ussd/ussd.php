@@ -35,8 +35,8 @@ if(!empty($text)){
 }else{
     $level = 0;
 }
-//print_r(count($exploded_text));
-//exit;
+print_r(count($exploded_text));
+exit;
 
 switch (trim(strtolower($level))) {
 
